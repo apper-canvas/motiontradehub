@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import { useEffect } from "react";
 import Layout from "@/components/organisms/Layout";
 import HomePage from "@/components/pages/HomePage";
 import SearchResultsPage from "@/components/pages/SearchResultsPage";
@@ -10,6 +11,35 @@ import MyListingsPage from "@/components/pages/MyListingsPage";
 import CartPage from "@/components/pages/CartPage";
 
 function App() {
+
+  useEffect(() => { 
+    const errorObject = [
+      {
+        "errors": [
+          {
+            "fieldName": "cost_c",
+            "fieldLabel": "Cost",
+            "message": "Field \u0027cost_c\u0027 must be a decimal value"
+          },
+          {
+            "fieldName": "cost_c",
+            "fieldLabel": "Cost",
+            "message": "Field \u0027cost_c\u0027 must be a decimal value"
+          }
+        ],
+        "data": null,
+        "success": false,
+        "message": "xyz"
+      },
+      {
+        "success": false,
+        "message": "Something went wrong. Please contact support for more details"
+      }
+    ];
+
+    console.error('Failed to create record: ', errorObject);
+  }, [])
+
   return (
     <BrowserRouter>
       <ToastContainer
