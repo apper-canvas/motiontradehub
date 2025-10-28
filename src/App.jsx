@@ -13,16 +13,10 @@ import CartPage from "@/components/pages/CartPage";
 function App() {
 
   useEffect(() => { 
-    const errorObject = [
-      {
-        id: 'abc-123',
-        name: 'abc',
-      },
-      {
-        id: 'abc-123',
-        name: 'abc',
-      }
-    ]
+    const errorObject = {
+      id: 'abc-123',
+      name: 'abc',
+    }
 
     console.error('Failed to create record: ', errorObject);
   }, [])
