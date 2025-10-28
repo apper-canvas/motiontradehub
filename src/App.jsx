@@ -15,22 +15,14 @@ function App() {
   useEffect(() => { 
     const errorObject = [
       {
-        "errors": [
-          {
-            "fieldName": "cost_c",
-            "fieldLabel": "Cost",
-            "message": "Field \u0027cost_c\u0027 must be a decimal value"
-          }
-        ],
-        "data": null,
-        "success": false,
-        "message": "Field level error"
+        id: 'abc-123',
+        name: 'abc',
       },
       {
-        "success": false,
-        "message": "Something went wrong. Please contact support for more details"
+        id: 'abc-123',
+        name: 'abc',
       }
-    ];
+    ]
 
     console.error('Failed to create record: ', errorObject);
   }, [])
