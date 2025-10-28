@@ -20,16 +20,11 @@ function App() {
             "fieldName": "cost_c",
             "fieldLabel": "Cost",
             "message": "Field \u0027cost_c\u0027 must be a decimal value"
-          },
-          {
-            "fieldName": "cost_c",
-            "fieldLabel": "Cost",
-            "message": "Field \u0027cost_c\u0027 must be a decimal value"
           }
         ],
         "data": null,
         "success": false,
-        "message": "xyz"
+        "message": "Field level error"
       },
       {
         "success": false,
